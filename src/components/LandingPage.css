@@ -1,0 +1,38 @@
+/* LandingPage.css */
+.landing-page {
+    /* Set the background image using the link you provided */
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCw-QSjIOn_JY6U8sPG_HG22z37oLdnnnSeg&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .landing-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Set the text color */
+  }
+  
+  .quote {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #000000; /* Replace this with your desired dark color */
+  }
+  
+  .get-started button {
+    background-color: #f57c00; /* Set your desired button color */
+    color: #fff; /* Set the text color */
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  /* Add more styling as needed */
+  
