@@ -1,11 +1,16 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import LandingPage from './components/LandingPage';
+
+import React from "react";
+import "./index.css";
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
+    <div>
+      <h1>
+        <Footer />
+      </h1>
+
     </div>
   );
 }
