@@ -39,6 +39,10 @@
 
 .social {
     margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 3 equal-width columns */
+    gap: 0.5%;
+    
 }
 
 h4 {
