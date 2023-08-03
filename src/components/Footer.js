@@ -20,7 +20,7 @@ const Footer = () => {
                     <h4><FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem"}}/>
                     bryanwaweru1076@gmail.com</h4>
                     <h4><FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem"}}/>
-                    </h4>
+                    jude.koome@student.moringaschool.com</h4>
                 </div>
 
             </div>
