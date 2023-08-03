@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './LandingPage.css';
+import AuthForm from './AuthForm';
 
 const LandingPage = () => {
+  const [showAuthForm, setShowAuthForm] = useState(false);
+
   return (
     <div className="landing-page">
       <Navbar />
@@ -12,7 +15,8 @@ const LandingPage = () => {
           <p>Change A Childs Life</p>
         </div>
         <div className="get-started">
-          <button>Get Started</button>
+          <button onClick={() => setShowAuthForm(!showAuthForm)}>Get Started</button>
+          {showAuthForm && <AuthForm />}
         </div>
       </div>
     </div>
