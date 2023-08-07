@@ -7,7 +7,6 @@ const charities = [
   { name: 'Charity 2', description: 'Description 2' },
   { name: 'Charity 2', description: 'Description 2' },
   { name: 'Charity 2', description: 'Description 2' },
-  { name: 'Charity 2', description: 'Description 2' },
   
   // ... other charities
 ];

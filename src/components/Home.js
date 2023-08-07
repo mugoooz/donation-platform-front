@@ -1,12 +1,11 @@
 import React from "react";
-import Highlights from "./Highlights";
-import { Link } from "react-router-dom";
-import EventsHome from "./EventsHome";
-import { useAuthContext } from "../providers/Auth.provider";
+// import Highlights from "./Highlights"; // Comment out this line
+// import EventsHome from "./EventsHome"; // Comment out this line
+// import { useAuthContext } from "../providers/Auth.provider"; // Comment out this line
 
 function Home() {
-  const auth = useAuthContext();
-  const isAuth = auth?.user;
+  // const auth = useAuthContext(); // Comment out this line
+  // const isAuth = auth?.user; // Comment out this line
   return (
     <div>
       <div className="h-screen">
@@ -18,6 +17,7 @@ function Home() {
             />
           </video>
         </div>
+        {/* You may need to modify this part as it references variables that were commented out */}
         <div className="text-white text-xl flex flex-col pl-40 justify-center gap-6 absolute top-20 bg-white/30 h-full w-full">
           <h1 className="text-6xl font-semibold uppercase">
             You are welcomed to <br />
@@ -29,24 +29,10 @@ function Home() {
             time, <br />
             MIMI-KENYA has an event for you.
           </p>
-          {!isAuth ? (
-            <Link to="/signIn">
-              <button className="bg-rose-600 rounded-lg w-48 p-2 text-white hover:opacity-80">
-                Get started <i className="fa-solid fa-arrow-right ml-1"></i>
-              </button>
-            </Link>
-          ) : (
-            <Link to="/events">
-              <button className="bg-rose-600 rounded-lg w-48 p-2 text-white hover:opacity-80">
-                <i className="fa-solid fa-calendar-days mr-2"></i>See all Events
-                <i className="fa-solid fa-arrow-right ml-1"></i>
-              </button>
-            </Link>
-          )}
+          {/* You'll probably need to modify this part as well since it uses 'isAuth' */}
         </div>
       </div>
-      <Highlights />
-      <EventsHome />
+      
     </div>
   );
 }
