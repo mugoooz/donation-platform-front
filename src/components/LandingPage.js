@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LandingPage.css';
-import AuthForm from './AuthForm';
+import DeviseAuthForm from './DeviseAuthForm';
 
 const LandingPage = () => {
   const [showAuthForm, setShowAuthForm] = useState(false);
@@ -9,14 +9,21 @@ const LandingPage = () => {
     <div className="landing-page">
       <div className="landing-content">
         <div className="quote">
-          {/* Your quote goes here */}
           <p>Change A Childs Life</p>
         </div>
         <div className="get-started">
-          <button onClick={() => setShowAuthForm(!showAuthForm)}>Get Started</button>
-          {showAuthForm && <AuthForm />}
+          <button onClick={() => setShowAuthForm(true)}>Get Started</button>
         </div>
       </div>
+
+      {showAuthForm && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close-button" onClick={() => setShowAuthForm(false)}>&times;</span>
+            <DeviseAuthForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
