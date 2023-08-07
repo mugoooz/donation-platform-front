@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar';
 import './LandingPage.css';
 import AuthForm from './AuthForm';
+import CharityCards from './CharityCards';
 
 const LandingPage = () => {
   const [showAuthForm, setShowAuthForm] = useState(false);
@@ -9,6 +10,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       <Navbar />
+      <CharityCards/>
       <div className="landing-content">
         <div className="quote">
           {/* Your quote goes here */}
