@@ -1,3 +1,4 @@
+
 import React from "react";
 // import Highlights from "./Highlights"; // Comment out this line
 // import EventsHome from "./EventsHome"; // Comment out this line
@@ -38,3 +39,4 @@ function Home() {
 }
 
 export default Home;
+

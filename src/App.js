@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Navbar from './components/Navbar';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/charity-login" element={<CharityLogin />} />
       </Routes>
+
     </div>
   );
 }
