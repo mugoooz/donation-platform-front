@@ -1,4 +1,6 @@
 /* LandingPage.css */
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
 .landing-page {
     /* Set the background image using the link you provided */
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCw-QSjIOn_JY6U8sPG_HG22z37oLdnnnSeg&usqp=CAU');
@@ -70,6 +72,13 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+  
+  .app-name {
+    font-family: 'Irish Grover', cursive; /* Specify the Irish Grover font */
+    font-size: 2rem; /* Adjust the size as needed */
+    text-align: center; /* Center-align the text */
+    margin-bottom: 1rem; /* Add some space below the text */
   }
   
   /* Add more styling as needed */

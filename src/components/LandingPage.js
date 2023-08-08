@@ -19,6 +19,7 @@ const LandingPage = () => {
       {showAuthForm && (
         <div className="modal">
           <div className="modal-content">
+          <h2 className="app-name">shiriki</h2> {/* App Name */}
             <span className="close-button" onClick={() => setShowAuthForm(false)}>&times;</span>
             <DeviseAuthForm />
           </div>

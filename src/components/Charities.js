@@ -1,11 +1,17 @@
 import React from 'react';
-import CharityCard from './CharityCard';
+import CharityCard from './CharityCards'; // Make sure the import path is correct
 
-const Charities = ({ charities }) => {
+const charities = [
+  { name: 'Charity 1', description: 'Description 1' },
+  { name: 'Charity 2', description: 'Description 2' },
+  // ... other charities
+];
+
+const Charities = () => {
   return (
     <div className="flex flex-wrap justify-center">
-      {charities.map((charity) => (
-        <CharityCard key={charity.id} charity={charity} />
+      {charities.map((charity, index) => (
+        <CharityCard key={index} charity={charity} />
       ))}
     </div>
   );
