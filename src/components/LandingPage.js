@@ -1,8 +1,8 @@
-import React, { useState, Link } from 'react';
+import React, { useState } from 'react';
 import './LandingPage.css';
 import DeviseAuthForm from './DeviseAuthForm';
 
-import Footer from './Footer';
+// import Footer from './Footer';
 
 const LandingPage = () => {
   const [showAuthForm, setShowAuthForm] = useState(false);
@@ -21,11 +21,7 @@ const LandingPage = () => {
       {showAuthForm && (
         <div className="modal">
           <div className="modal-content">
-          <h2 className="app-name">shiriki</h2> App Name
-
-          <Link to = "/">
-            <h1>Shiriki</h1>
-          </Link>
+          <h2 className="app-name">shiriki</h2> 
 
             <span className="close-button" onClick={() => setShowAuthForm(false)}>&times;</span>
             <DeviseAuthForm />
