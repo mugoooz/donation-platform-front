@@ -20,35 +20,55 @@ const CharityLogin = () => {
     console.log(form);
   };
 
+  const formStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    maxWidth: '300px',
+    margin: '0 auto',
+  };
+
+  const labelStyle = {
+    margin: '10px 0',
+  };
+
+  const buttonStyle = {
+    padding: '10px',
+    background: '#4caf50',
+    color: 'white',
+    border: 'none',
+    cursor: 'pointer',
+    textAlign: 'center',
+  };
+
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-2xl mb-4">Charity Login</h1>
-      <form onSubmit={handleSubmit} className="max-w-md mx-auto p-4 border border-gray-200 rounded">
-        <label className="block mb-2">
+    <div>
+      <h1>Charity Login</h1>
+      <form onSubmit={handleSubmit} style={formStyle}>
+        <label style={labelStyle}>
           Name:
-          <input type="text" name="name" value={form.name} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="text" name="name" value={form.name} onChange={handleChange} required />
         </label>
-        <label className="block mb-2">
+        <label style={labelStyle}>
           Location:
-          <input type="text" name="location" value={form.location} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="text" name="location" value={form.location} onChange={handleChange} required />
         </label>
-        <label className="block mb-2">
+        <label style={labelStyle}>
           Phone Number:
-          <input type="tel" name="phoneNumber" value={form.phoneNumber} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="tel" name="phoneNumber" value={form.phoneNumber} onChange={handleChange} required />
         </label>
-        <label className="block mb-2">
+        <label style={labelStyle}>
           Email:
-          <input type="email" name="email" value={form.email} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="email" name="email" value={form.email} onChange={handleChange} required />
         </label>
-        <label className="block mb-2">
+        <label style={labelStyle}>
           Purpose:
-          <input type="text" name="purpose" value={form.purpose} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="text" name="purpose" value={form.purpose} onChange={handleChange} required />
         </label>
-        <label className="block mb-2">
+        <label style={labelStyle}>
           Password:
-          <input type="password" name="password" value={form.password} onChange={handleChange} required className="w-full p-2 border rounded" />
+          <input type="password" name="password" value={form.password} onChange={handleChange} required />
         </label>
-        <button type="submit" className="w-full p-2 bg-green-500 text-white rounded">Login</button>
+        <button type="submit" style={buttonStyle}>Login</button>
       </form>
     </div>
   );
