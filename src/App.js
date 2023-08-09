@@ -8,6 +8,7 @@ import AboutUs from './components/AboutUs'; // Import your AboutUs component
 import Impact from './components/Impact'; // Import your Impact component
 import Donate from './components/Donate'; // Import your Donate component
 import CharityLogin from './components/CharityLogin'; // Import your CharityLogin component
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/donate" element={<Donate />} />
         <Route path="/charity-login" element={<CharityLogin />} />
       </Routes>
+      <Footer />
 
     </div>
   );
