@@ -77,6 +77,8 @@ const DeviseAuthForm = () => {
   );
 };
 
+// jude
+
 export default DeviseAuthForm;
 
           
