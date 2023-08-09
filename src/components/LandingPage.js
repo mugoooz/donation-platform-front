@@ -25,6 +25,7 @@ const LandingPage = () => {
 
             <span className="close-button" onClick={() => setShowAuthForm(false)}>&times;</span>
             <DeviseAuthForm />
+            
           </div>
         </div>
       )}
