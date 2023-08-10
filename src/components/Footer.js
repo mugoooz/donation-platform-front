@@ -1,10 +1,7 @@
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import the Link component
+import { FaGithub, FaLinkedinIn, FaTwitter, FaMailBulk } from "react-icons/fa";
 import "./Footer.css";
-
-import React from 'react'
-
-// import { FaIconName } from 'react-icons/fa';
-import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
-import { FaMailBulk } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -34,6 +31,16 @@ const Footer = () => {
                 <FaMailBulk size={20} style={{color:"#fff", marginRight: "2rem"}} />
                 </div>
                 <br /> <br />
+                 {/* Admin Login Link */}
+                 <div className="admin-login">
+  <Link 
+    to="/admin-login" 
+    className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-2.5 rounded"
+  >
+    Admin Login
+  </Link>
+</div>
+
                 <div>
                     <h4 className="ital">Copyright © 2023 Eric, Elsie, Bryan, Jude </h4>
                 </div>

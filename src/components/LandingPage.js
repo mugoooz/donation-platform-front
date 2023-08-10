@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './LandingPage.css';
 import DeviseAuthForm from './SignUpForm';
 
-// import Footer from './Footer';
 
 const LandingPage = () => {
   const [showAuthForm, setShowAuthForm] = useState(false);
