@@ -1,5 +1,7 @@
-import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+
+
+import {React, } from 'react';
+import { Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Home from './components/Home';
@@ -11,6 +13,7 @@ import Footer from './components/Footer';
 import SignUpForm from './components/SignUpForm';
 import LoginForm from './components/LoginForm';
 import AdminLogin from './components/AdminLogin';
+
 
 function App() {
   return (
@@ -28,8 +31,10 @@ function App() {
         <Route path="/admin-login" element={<AdminLogin />} /> {/* Updated line */}
       </Routes>
       <Footer />
+
     </div>
   );
 }
+
 
 export default App;
