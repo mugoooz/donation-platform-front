@@ -1,5 +1,7 @@
 
-import React from 'react';
+import {React, } from 'react';
+
+
 import { Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
@@ -13,6 +15,7 @@ import SignUpForm from './components/SignUpForm'; // Adjust the path if needed
 import LoginForm from './components/LoginForm'; // Adjust the path if needed
 
 
+
 function App() {
   return (
     <div className="App">
@@ -24,12 +27,15 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/charity-login" element={<CharityLogin />} />
+
         <Route path="/signup" element={<SignUpForm />} /> {/* Add this line */}
         <Route path="/login" element={<LoginForm />} /> {/* Add this line */}
       </Routes>
       <Footer />
+
     </div>
   );
 }
+
 
 export default App;
