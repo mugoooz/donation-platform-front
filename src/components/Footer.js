@@ -26,7 +26,7 @@ const Footer = () => {
             </div>
 
             <div className="right">
-                <h4></h4>
+                <h4>Social</h4>
                 <div className="social">
                 <FaGithub size={20} style={{color:"#fff", marginRight: "2rem"}}/>
                 <FaTwitter size={20} style={{color:"#fff", marginRight: "2rem"}}/>
