@@ -1,5 +1,7 @@
 
-import React from 'react';
+import {React, } from 'react';
+
+
 import { Route, Routes } from 'react-router-dom'; // Use Routes instead of Switch
 import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
@@ -8,7 +10,7 @@ import AboutUs from './components/AboutUs'; // Import your AboutUs component
 import Impact from './components/Impact'; // Import your Impact component
 import Donate from './components/Donate'; // Import your Donate component
 import CharityLogin from './components/CharityLogin'; // Import your CharityLogin component
-import PayPalDonation from './components/PaypalDonation';
+
 
 function App() {
   return (
@@ -23,11 +25,11 @@ function App() {
         <Route path="/charity-login" element={<CharityLogin />} />
         
       </Routes>
-      <PayPalDonation/>
+      
 
     </div>
   );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
 export default App;
