@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 
-const DeviseAuthForm = () => {
+const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Your authentication logic here
+    // Your login logic here
   };
 
   return (
@@ -26,7 +26,7 @@ const DeviseAuthForm = () => {
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
-          
+
           <div className="mb-4">
             <label htmlFor="password" className="block text-sm font-medium text-gray-600">Password:</label>
             <input
@@ -38,7 +38,7 @@ const DeviseAuthForm = () => {
               className="mt-1 p-2 w-full border rounded-md"
             />
           </div>
-          
+
           <button type="submit" className="w-full p-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
             Login
           </button>
@@ -48,4 +48,4 @@ const DeviseAuthForm = () => {
   );
 };
 
-export default DeviseAuthForm;
+export default LoginForm;

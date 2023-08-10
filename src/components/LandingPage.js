@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './LandingPage.css';
-import DeviseAuthForm from './DeviseAuthForm';
+import DeviseAuthForm from './SignUpForm';
 
 // import Footer from './Footer';
 
