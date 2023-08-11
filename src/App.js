@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
+
 import Donate from './components/Donate';
 import CharityLogin from './components/CharityLogin';
 import Footer from './components/Footer';
