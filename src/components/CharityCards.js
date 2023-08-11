@@ -31,3 +31,5 @@ const CharityCards = () => {
 };
 
 export default CharityCards;
+export { charities };
+

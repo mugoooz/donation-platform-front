@@ -6,7 +6,6 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
-import Impact from './components/Impact';
 import Donate from './components/Donate';
 import CharityLogin from './components/CharityLogin';
 import Footer from './components/Footer';
@@ -23,7 +22,6 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/impact" element={<Impact />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/charity-login" element={<CharityLogin />} />
         <Route path="/signup" element={<SignUpForm />} />
