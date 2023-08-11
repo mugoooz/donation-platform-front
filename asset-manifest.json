@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mugoooz/donation-platform-front/static/css/main.f5225fb5.css",
+    "main.js": "/mugoooz/donation-platform-front/static/js/main.918b3e30.js",
+    "index.html": "/mugoooz/donation-platform-front/index.html",
+    "main.f5225fb5.css.map": "/mugoooz/donation-platform-front/static/css/main.f5225fb5.css.map",
+    "main.918b3e30.js.map": "/mugoooz/donation-platform-front/static/js/main.918b3e30.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f5225fb5.css",
+    "static/js/main.918b3e30.js"
+  ]
+}
