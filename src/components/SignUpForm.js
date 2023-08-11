@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const DeviseAuthForm = () => {
   const [name, setName] = useState('');
@@ -7,9 +8,16 @@ const DeviseAuthForm = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
 
+  // Get the navigate function
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
+
     // Your sign-up logic here
+
+    // Redirect to the Donate page
+    navigate('/donate');
   };
 
   return (
